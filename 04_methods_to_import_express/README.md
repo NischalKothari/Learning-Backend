@@ -1,7 +1,6 @@
 ## Notes
 
-- <code style ="color : red">Files ending with .js → follow your package.json "type" setting.
-</code> 
+- Files ending with .js → follow your package.json "type" setting.
 
 - Files ending with .cjs → always treated as CommonJS (require works).
 
