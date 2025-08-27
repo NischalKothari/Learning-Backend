@@ -5,6 +5,16 @@
 const express = require('express')
 const app = express()
 
+app.use(function (req,res,next) {
+    console.log("Hello");
+    next()
+})
+
+app.use(function(req,res,next){
+    console.log("World");
+    next();
+})
+
 
 app.get('/', (req, res) => {
   res.send('Backend')
