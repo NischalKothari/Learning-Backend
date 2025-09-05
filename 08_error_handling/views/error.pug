@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title Error Page
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .error-box {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        color: #dc3545;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      a {
+        color: white;
+        background: #007bff;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      a:hover {
+        background: #0056b3;
+      }
+  body
+    .error-box
+      h1 Oops! Something went wrong 😢
+      if error
+        p #{error}
+      else
+        p An unexpected error has occurred.
+      a(href="/") Go Back Home

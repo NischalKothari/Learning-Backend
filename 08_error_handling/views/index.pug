@@ -1,0 +1,106 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Random Pug Template
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f7fa;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 1rem;
+        font-weight: bold;
+      }
+      .hero {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+        padding: 5rem 2rem;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        background: #2575fc;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1b5edb;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #333;
+        color: #fff;
+      }
+    script.
+      function showAlert(msg) {
+        alert(msg || "Button clicked!");
+      }
+  body
+    header
+      h1 Random Pug Template
+      nav
+        a(href="#") Home
+        a(href="#") About
+        a(href="#") Contact
+    section.hero
+      h2 Welcome to this Random Template
+      p A simple Pug + CSS + JS starter.
+      button(onclick="showAlert('Hello from Hero Button!')") Click Me
+    section.cards
+      .card
+        h3 Card One
+        p This is the first card. Random text here.
+        button(onclick="showAlert('Card One pressed')") Action
+      .card
+        h3 Card Two
+        p Another card for fun, styled simply.
+        button(onclick="showAlert('Card Two pressed')") Action
+      .card
+        h3 Card Three
+        p Yet another random card to fill space.
+        button(onclick="showAlert('Card Three pressed')") Action
+    footer
+      p © 2025 Random Pug Template
