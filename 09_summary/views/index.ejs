@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Interactive Template</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>✨ Modern Web Template</h1>
+            <p class="subtitle">Beautiful, interactive, and responsive design</p>
+        </header>
+
+        <div class="card-grid">
+            <div class="card" onclick="animateCard(this)">
+                <span class="card-icon">🚀</span>
+                <h3>Fast Performance</h3>
+                <p>Built with modern web standards for lightning-fast loading times and smooth interactions.</p>
+            </div>
+            
+            <div class="card" onclick="animateCard(this)">
+                <span class="card-icon">📱</span>
+                <h3>Responsive Design</h3>
+                <p>Looks perfect on all devices - from mobile phones to desktop computers.</p>
+            </div>
+            
+            <div class="card" onclick="animateCard(this)">
+                <span class="card-icon">🎨</span>
+                <h3>Beautiful UI</h3>
+                <p>Modern glassmorphism effects with smooth animations and vibrant gradients.</p>
+            </div>
+        </div>
+
+        <div class="interactive-section">
+            <h2>🎯 Interactive Demo</h2>
+            <p>Try changing the background gradient by clicking the colors below!</p>
+            
+            <div class="color-picker">
+                <div class="color-btn" style="background: linear-gradient(45deg, #ff6b6b, #feca57);" onclick="changeTheme('sunset')"></div>
+                <div class="color-btn" style="background: linear-gradient(45deg, #667eea, #764ba2);" onclick="changeTheme('purple')"></div>
+                <div class="color-btn" style="background: linear-gradient(45deg, #f093fb, #f5576c);" onclick="changeTheme('pink')"></div>
+                <div class="color-btn" style="background: linear-gradient(45deg, #4facfe, #00f2fe);" onclick="changeTheme('blue')"></div>
+                <div class="color-btn" style="background: linear-gradient(45deg, #43e97b, #38f9d7);" onclick="changeTheme('green')"></div>
+            </div>
+            
+            <button class="btn" onclick="createParticles()">✨ Create Magic</button>
+            <button class="btn" onclick="resetAnimation()">🔄 Reset</button>
+        </div>
+    </div>
+    <script src="../javascripts/index.js"></script>
+</body>
+</html>
